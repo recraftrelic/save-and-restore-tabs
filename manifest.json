@@ -4,6 +4,12 @@
     "version": "1.0",
     "description": "Save tabs to list and restore them",
     "background": {
-        "script": "background.js"
+        "scripts": ["background.js"]
+    },
+    "permissions": ["tabs"],
+    "browser_action": {
+        "default_icon": "icons/icon-32.png",
+        "default_title": "Save this tab",
+        "default_popup": "popup/save_tab.html"
     }
 }
