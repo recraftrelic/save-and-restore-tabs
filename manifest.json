@@ -3,7 +3,14 @@
     "name": "Save and restore tabs",
     "version": "1.0",
     "description": "Save tabs to list and restore them",
+    "permissions": ["menus"],
     "background": {
-        "script": "background.js"
-    }
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["index.js"]
+        }
+    ]
 }
