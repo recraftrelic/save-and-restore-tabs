@@ -1,0 +1,9 @@
+{
+    "manifest_version": 2,
+    "name": "Save and restore tabs",
+    "version": "1.0",
+    "description": "Save tabs to list and restore them",
+    "background": {
+        "script": "background.js"
+    }
+}
