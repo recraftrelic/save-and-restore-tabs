@@ -3,6 +3,7 @@
     "name": "Save and restore tabs",
     "version": "1.0",
     "description": "Save tabs to list and restore them",
+    "permissions": ["menus"],
     "background": {
         "scripts": ["background.js"]
     },
@@ -11,5 +12,11 @@
         "default_icon": "icons/icon-32.png",
         "default_title": "Save this tab",
         "default_popup": "popup/save_tab.html"
-    }
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["index.js"]
+        }
+    ]
 }
